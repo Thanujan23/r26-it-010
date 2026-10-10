@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>R26-IT-010 — AI-Based Electricity Demand Intelligence System for Sri Lanka</title>
+  <meta name="description" content="SLIIT final-year research project R26-IT-010: behaviour intelligence, adaptive forecasting, explainable AI and scenario decision support for electricity demand in Sri Lanka.">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============================================================ HEADER -->
+  <header class="site-header" id="top">
+    <div class="wrap header-inner">
+      <a class="brand" href="#home" aria-label="R26-IT-010 Electricity Demand Intelligence — Home">
+        <span class="brand-id">R26-IT-010</span>
+        <span class="brand-name">Electricity Demand Intelligence</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+        <span class="nav-toggle-label">Menu</span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Sections">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#domain">Domain</a></li>
+          <li><a href="#milestones">Milestones</a></li>
+          <li><a href="#documents">Documents</a></li>
+          <li><a href="#presentations">Presentations</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <div class="search" role="search">
+          <label class="visually-hidden" for="site-search">Search sections and documents</label>
+          <input id="site-search" type="search" placeholder="Search" autocomplete="off"
+                 role="combobox" aria-expanded="false" aria-controls="search-results" aria-autocomplete="list">
+          <ul class="search-results" id="search-results" role="listbox" aria-label="Search results" hidden></ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============================================================ 01 HOME -->
+    <section class="section hero" id="home" aria-labelledby="home-title" data-nav="Home">
+      <div class="wrap">
+        <p class="section-no"><span>01</span> Home</p>
+        <div class="hero-grid">
+          <div class="hero-text">
+            <p class="label">Final-year research project · <span data-bind="project.id">R26-IT-010</span></p>
+            <h1 id="home-title" data-bind="project.title">AI-Based Electricity Demand Intelligence System for Sri Lanka</h1>
+            <p class="lead" data-bind="project.abstract">Planners receive demand figures and forecasts but little insight into what kind of day each day is, which days behave abnormally, and why. The system combines four services: behaviour intelligence, adaptive deep-learning forecasting with calibrated uncertainty, explainable AI and scenario decision support.</p>
+            <p class="actions">
+              <a class="btn btn-primary" href="#domain">Read the domain</a>
+              <a class="btn" href="#contact">Contact the team</a>
+            </p>
+          </div>
+
+          <figure class="hero-figure">
+            <svg viewBox="0 0 560 290" role="img" aria-labelledby="curve-title curve-desc">
+              <title id="curve-title">A typical daily electricity load curve</title>
+              <desc id="curve-desc">Demand is lowest around 03:00, rises through the morning, stays on a daytime plateau and reaches its peak in the evening at about 19:30 before falling towards midnight.</desc>
+              <g class="grid">
+                <line x1="48" y1="36" x2="540" y2="36"/>
+                <line x1="48" y1="103" x2="540" y2="103"/>
+                <line x1="48" y1="170" x2="540" y2="170"/>
+              </g>
+              <path class="curve-area" d="M48.0 199.1 C51.4 201.1 61.7 208.3 68.5 211.4 C75.3 214.5 82.2 216.0 89.0 217.5 C95.8 219.1 102.7 221.1 109.5 220.6 C116.3 220.1 123.2 219.6 130.0 214.5 C136.8 209.3 143.7 198.6 150.5 189.8 C157.3 181.1 164.2 167.8 171.0 162.2 C177.8 156.5 184.7 158.1 191.5 156.0 C198.3 153.9 205.2 152.9 212.0 149.8 C218.8 146.8 225.7 141.1 232.5 137.5 C239.3 133.9 246.2 130.9 253.0 128.3 C259.8 125.7 266.7 122.2 273.5 122.2 C280.3 122.2 287.2 127.8 294.0 128.3 C300.8 128.8 307.7 126.8 314.5 125.2 C321.3 123.7 328.2 119.6 335.0 119.1 C341.8 118.6 348.7 121.1 355.5 122.2 C362.3 123.2 369.2 125.7 376.0 125.2 C382.8 124.7 389.7 125.2 396.5 119.1 C403.3 112.9 410.2 98.6 417.0 88.3 C423.8 78.1 432.4 63.7 437.5 57.5 C442.6 51.4 444.3 51.4 447.8 51.4 C451.2 51.4 452.9 52.4 458.0 57.5 C463.1 62.7 471.7 70.9 478.5 82.2 C485.3 93.4 492.2 110.9 499.0 125.2 C505.8 139.6 512.7 156.5 519.5 168.3 C526.3 180.1 536.6 191.4 540.0 196.0 L540 236 L48 236 Z"/>
+              <line class="peak-drop" x1="447.8" y1="51.4" x2="447.8" y2="236"/>
+              <path class="curve" d="M48.0 199.1 C51.4 201.1 61.7 208.3 68.5 211.4 C75.3 214.5 82.2 216.0 89.0 217.5 C95.8 219.1 102.7 221.1 109.5 220.6 C116.3 220.1 123.2 219.6 130.0 214.5 C136.8 209.3 143.7 198.6 150.5 189.8 C157.3 181.1 164.2 167.8 171.0 162.2 C177.8 156.5 184.7 158.1 191.5 156.0 C198.3 153.9 205.2 152.9 212.0 149.8 C218.8 146.8 225.7 141.1 232.5 137.5 C239.3 133.9 246.2 130.9 253.0 128.3 C259.8 125.7 266.7 122.2 273.5 122.2 C280.3 122.2 287.2 127.8 294.0 128.3 C300.8 128.8 307.7 126.8 314.5 125.2 C321.3 123.7 328.2 119.6 335.0 119.1 C341.8 118.6 348.7 121.1 355.5 122.2 C362.3 123.2 369.2 125.7 376.0 125.2 C382.8 124.7 389.7 125.2 396.5 119.1 C403.3 112.9 410.2 98.6 417.0 88.3 C423.8 78.1 432.4 63.7 437.5 57.5 C442.6 51.4 444.3 51.4 447.8 51.4 C451.2 51.4 452.9 52.4 458.0 57.5 C463.1 62.7 471.7 70.9 478.5 82.2 C485.3 93.4 492.2 110.9 499.0 125.2 C505.8 139.6 512.7 156.5 519.5 168.3 C526.3 180.1 536.6 191.4 540.0 196.0"/>
+              <line class="axis" x1="48" y1="236" x2="540" y2="236"/>
+              <g class="ticks">
+                <line x1="48" y1="236" x2="48" y2="241"/>
+                <line x1="171" y1="236" x2="171" y2="241"/>
+                <line x1="294" y1="236" x2="294" y2="241"/>
+                <line x1="417" y1="236" x2="417" y2="241"/>
+                <line x1="540" y1="236" x2="540" y2="241"/>
+              </g>
+              <g class="tick-labels" text-anchor="middle">
+                <text x="48" y="257">00:00</text>
+                <text x="171" y="257">06:00</text>
+                <text x="294" y="257">12:00</text>
+                <text x="417" y="257">18:00</text>
+                <text x="540" y="257" text-anchor="end">24:00</text>
+              </g>
+              <text class="axis-title" x="48" y="24">Demand</text>
+              <text class="axis-title" x="294" y="281" text-anchor="middle">Time of day</text>
+              <circle class="trough-dot" cx="109.5" cy="220.6" r="3"/>
+              <text class="note" x="118" y="210">Night trough</text>
+              <text class="note" x="300" y="108" text-anchor="middle">Daytime plateau</text>
+              <circle class="peak-dot" cx="447.8" cy="51.4" r="4.5"/>
+              <text class="peak-label" x="437" y="40" text-anchor="end">Evening peak · 19:30</text>
+            </svg>
+            <figcaption>Fig. 1 — Illustrative shape of a daily load curve. The system reads each day as a 96-point profile of 15-minute demand values.</figcaption>
+          </figure>
+        </div>
+
+        <dl class="stat-strip" id="stat-strip" aria-label="Project in numbers"></dl>
+
+        <div class="components">
+          <h2 class="sub-title">Four components</h2>
+          <p class="sub-intro">Each member builds one service. Together they tell a planner what demand will be, how the day behaves, why, and what happens if conditions change.</p>
+          <ol class="component-row" id="component-row"></ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================== 02 DOMAIN -->
+    <section class="section" id="domain" aria-labelledby="domain-title" data-nav="Domain">
+      <div class="wrap">
+        <p class="section-no"><span>02</span> Domain</p>
+        <h2 class="section-title" id="domain-title">Research domain</h2>
+
+        <div class="tabs" id="domain-tabs">
+          <div class="tablist" role="tablist" aria-label="Domain topics">
+            <button role="tab" id="tab-literature" aria-controls="literature" aria-selected="true">Literature Survey</button>
+            <button role="tab" id="tab-gap" aria-controls="gap" aria-selected="false" tabindex="-1">Research Gap</button>
+            <button role="tab" id="tab-problem" aria-controls="problem" aria-selected="false" tabindex="-1">Research Problem</button>
+            <button role="tab" id="tab-objectives" aria-controls="objectives" aria-selected="false" tabindex="-1">Research Objectives</button>
+            <button role="tab" id="tab-methodology" aria-controls="methodology" aria-selected="false" tabindex="-1">Methodology</button>
+            <button role="tab" id="tab-technologies" aria-controls="technologies" aria-selected="false" tabindex="-1">Technologies Used</button>
+          </div>
+
+          <!-- Literature Survey -->
+          <article class="tabpanel" id="literature" role="tabpanel" aria-labelledby="tab-literature" tabindex="0">
+            <h3>Literature Survey</h3>
+            <div class="prose">
+              <p>Electricity cannot be stored cheaply at grid scale, so generation has to follow demand closely, and the quality of the information planners hold about demand has direct operational and financial consequences. Research on electricity demand has concentrated on forecasting: statistical models such as ARIMA and regression were followed by machine-learning and deep-learning models that predict demand more accurately. The survey below follows the four themes of our proposals.</p>
+
+              <h4>Demand forecasting in Sri Lanka</h4>
+              <p>A study of peak electricity demand in Sri Lanka compared multiple regression analysis with an artificial neural network on Ceylon Electricity Board data and reported a mean absolute percentage error of 2.50% for the neural network against 4.72% for regression <a class="cite" href="#ref-1">[1]</a>. A meta-analysis covering Australia, Pakistan and Sri Lanka found that machine-learning and hybrid methods generally outperform statistical models, but that many models do not adequately include external factors such as weather and behaviour <a class="cite" href="#ref-2">[2]</a>. Short-term studies for Sri Lanka have compared statistical and deep-learning models <a class="cite" href="#ref-3">[3]</a>, and a broad review of forecasting methodologies identified interpretability and behavioural analysis as weaknesses of current models <a class="cite" href="#ref-4">[4]</a>.</p>
+
+              <h4>Clustering of load patterns</h4>
+              <p>K-Means has been used to classify load patterns of the Indonesian Jawa-Bali system by their peak-load characteristics, revealing variation associated with national holidays and social activity <a class="cite" href="#ref-5">[5]</a>. Unsupervised methods with dynamic time warping have grouped industrial demand profiles for demand-side management <a class="cite" href="#ref-6">[6]</a>, and Chicco reviewed clustering methods for load-pattern grouping together with the indices used to evaluate them <a class="cite" href="#ref-7">[7]</a>. Other work clusters households or smart-meter series first and then forecasts per cluster, which reduced forecast error <a class="cite" href="#ref-8">[8]</a>, <a class="cite" href="#ref-9">[9]</a>. In these studies clustering is a preprocessing aid, not a description of daily system behaviour.</p>
+
+              <h4>Anomaly detection in electricity consumption</h4>
+              <p>A hybrid framework combining unsupervised detection with a supervised boosted decision tree was applied to smart-meter data from about 4,300 Irish households and reported 90% accuracy and an F1-score of 0.894 in identifying suspicious consumption <a class="cite" href="#ref-10">[10]</a>. A VAE–DBSCAN method removed abnormal readings before ARIMA forecasting <a class="cite" href="#ref-11">[11]</a>, and a framework using symbolic aggregate approximation with CART and MLP classifiers gave energy managers interpretable anomaly tools for buildings <a class="cite" href="#ref-12">[12]</a>. These frameworks work at meter or building level, and several depend on labelled anomalies.</p>
+
+              <h4>Choosing unsupervised models without ground truth</h4>
+              <p>Without labels, cluster quality is judged with internal indices: the Silhouette coefficient <a class="cite" href="#ref-13">[13]</a>, the Davies–Bouldin index <a class="cite" href="#ref-14">[14]</a> and the Calinski–Harabasz score <a class="cite" href="#ref-15">[15]</a>. The indices encode different notions of a good partition and can disagree. For anomaly detectors, the number of flagged points is fixed in advance by the contamination parameter, so counting anomalies says little about quality; Hennig's bootstrap approach, which compares results across resamples with the Jaccard coefficient, offers a stability-based alternative <a class="cite" href="#ref-16">[16]</a>.</p>
+            </div>
+
+            <div class="table-scroll">
+              <table class="rule-table">
+                <caption>Table 1 — Selected related studies and how they relate to this project</caption>
+                <thead>
+                  <tr><th scope="col">Study</th><th scope="col">Approach</th><th scope="col">Level / data</th><th scope="col">What it leaves open</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td class="num">[1]</td><td>Regression vs neural-network peak-demand prediction</td><td>Sri Lanka, CEB</td><td>Numbers only; no description of day behaviour</td></tr>
+                  <tr><td class="num">[2]</td><td>Meta-analysis of forecasting methods</td><td>Australia, Pakistan, Sri Lanka</td><td>Notes missing behavioural factors</td></tr>
+                  <tr><td class="num">[5]</td><td>K-Means on load patterns</td><td>Jawa-Bali system</td><td>No anomaly detection or day labels</td></tr>
+                  <tr><td class="num">[6]</td><td>PAM, k-shape, DBA with dynamic time warping</td><td>Industrial plants</td><td>Customer profiling, not daily system behaviour</td></tr>
+                  <tr><td class="num">[8], [9]</td><td>Clustering before forecasting</td><td>Households, smart meters</td><td>Clustering only as a forecasting aid</td></tr>
+                  <tr><td class="num">[10]</td><td>SR-CNN and martingale detection with boosted trees</td><td>About 4,300 households</td><td>Meter-level fraud; needs labels</td></tr>
+                  <tr><td class="num">[11]</td><td>VAE with DBSCAN</td><td>Consumption points</td><td>Anomalies removed for forecasting, not explained</td></tr>
+                  <tr><td class="num">[12]</td><td>SAX with CART / MLP</td><td>Buildings</td><td>Interpretable, but building-level</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <details class="references">
+              <summary>References</summary>
+              <ol>
+                <li id="ref-1">G. V. B. De Silva and L. A. Samaliarachchi, “Peak electricity demand prediction model for Sri Lanka power system,” <i>ENGINEER, Journal of the Institution of Engineers, Sri Lanka</i>, vol. 46, no. 4, pp. 53–60, 2013.</li>
+                <li id="ref-2">Z. Omar and L. Liyanage, “A meta-analysis of electricity demand forecasting using modelling methods, factors, and horizon: A review study of Australia, Pakistan, and Sri Lanka,” <i>Sustainable Energy Research</i>, 2025.</li>
+                <li id="ref-3">D. N. L. S. Uduwage, R. K. Shiwakoti, and P. Limcharoen, “Short-term electricity demand forecasting in Sri Lanka using statistical and deep learning models,” in <i>Proc. 13th World Construction Symposium</i>, Sri Lanka, Aug. 2025.</li>
+                <li id="ref-4">P. O. Ugbehe, O. E. Diemuodeke, and D. O. Aikhuele, “Electricity demand forecasting methodologies and applications: A review,” <i>Sustainable Energy Research</i>, vol. 12, art. 19, 2025.</li>
+                <li id="ref-5">“Electricity load classification using K-means clustering algorithm,” in <i>Proc. 2020 Int. Conf. Technology and Policy in Energy and Electric Power (ICT-PEP)</i>, 2020, pp. 1–6.</li>
+                <li id="ref-6">“Unsupervised grouping of industrial electricity demand profiles: Synthetic profiles for demand-side management applications,” <i>Energy</i>, 2021.</li>
+                <li id="ref-7">G. Chicco, “Overview and performance assessment of the clustering methods for electrical load pattern grouping,” <i>Energy</i>, vol. 42, no. 1, pp. 68–80, 2012.</li>
+                <li id="ref-8">X. Jin, X. Wang, and Y. Liu, “Short-term load forecasting based on the analysis of user electricity behavior,” <i>Algorithms</i>, vol. 9, no. 4, art. 80, 2016.</li>
+                <li id="ref-9">Y. Kim, J. Lee, and K. Choi, “Time-series clustering and forecasting household electricity demand using smart meter data,” <i>Energy Reports</i>, vol. 9, 2023.</li>
+                <li id="ref-10">S. Maleki, S. Maleki, and N. R. Jennings, “Anomaly detection with machine learning algorithms and big data in electricity consumption,” <i>Sustainability</i>, vol. 13, no. 19, art. 10963, 2021.</li>
+                <li id="ref-11">“DBSCAN-based electricity consumption anomaly detection method integrated with VAE,” <i>Engineering Reports</i>, 2025.</li>
+                <li id="ref-12">L. Mascali <i>et al.</i>, “A machine learning-based anomaly detection framework for building electricity consumption data,” <i>Sustainable Energy, Grids and Networks</i>, vol. 36, art. 101194, 2023.</li>
+                <li id="ref-13">P. J. Rousseeuw, “Silhouettes: A graphical aid to the interpretation and validation of cluster analysis,” <i>Journal of Computational and Applied Mathematics</i>, vol. 20, pp. 53–65, 1987.</li>
+                <li id="ref-14">D. L. Davies and D. W. Bouldin, “A cluster separation measure,” <i>IEEE Transactions on Pattern Analysis and Machine Intelligence</i>, vol. PAMI-1, no. 2, pp. 224–227, 1979.</li>
+                <li id="ref-15">T. Caliński and J. Harabasz, “A dendrite method for cluster analysis,” <i>Communications in Statistics</i>, vol. 3, no. 1, pp. 1–27, 1974.</li>
+                <li id="ref-16">C. Hennig, “Cluster-wise assessment of cluster stability,” <i>Computational Statistics &amp; Data Analysis</i>, vol. 52, no. 1, pp. 258–271, 2007.</li>
+                <li id="ref-17">A. R. Hevner, S. T. March, J. Park, and S. Ram, “Design science in information systems research,” <i>MIS Quarterly</i>, vol. 28, no. 1, pp. 75–105, 2004.</li>
+                <li id="ref-18">K. Peffers, T. Tuunanen, M. A. Rothenberger, and S. Chatterjee, “A design science research methodology for information systems research,” <i>Journal of Management Information Systems</i>, vol. 24, no. 3, pp. 45–77, 2007.</li>
+              </ol>
+            </details>
+          </article>
+
+          <!-- Research Gap -->
+          <article class="tabpanel" id="gap" role="tabpanel" aria-labelledby="tab-gap" tabindex="0" hidden>
+            <h3>Research Gap</h3>
+            <div class="prose">
+              <p>Existing work predicts demand well, but each capability a planner needs sits in a separate study or tool. The proposals identified five gaps.</p>
+            </div>
+            <ol class="numbered-list">
+              <li>
+                <h4>No day-level behaviour description</h4>
+                <p>Clustering of load profiles is mostly used to improve forecasts or to profile customers, and anomaly detection targets fraud and faults in individual meters. No reviewed study or tool assigns each day of a system demand series to a small set of readable behaviour categories with reasons.</p>
+              </li>
+              <li>
+                <h4>Point forecasts without uncertainty</h4>
+                <p>Most forecasting research reports accuracy measures such as MAE and RMSE. These say nothing about how uncertain a forecast is, and hybrid and attention-based architectures are rarely compared side by side.</p>
+              </li>
+              <li>
+                <h4>Forecasts that cannot be explained</h4>
+                <p>Many models operate as black boxes and return point estimates without showing how weather, calendar or other factors drove them, which limits trust and use by planners and policymakers.</p>
+              </li>
+              <li>
+                <h4>No what-if scenario analysis</h4>
+                <p>Most solutions lack interactive scenario analysis, so decision-makers cannot easily simulate conditions such as heat waves, festivals or demand spikes before they occur.</p>
+              </li>
+              <li>
+                <h4>No unified platform</h4>
+                <p>Research rarely combines behaviour analysis, forecasting, explanation and decision support in one practical tool; the intelligence a planner needs is fragmented.</p>
+              </li>
+            </ol>
+            <p class="aside">A further, methodological gap concerns how unsupervised models are chosen. Comparisons often rely on a single index such as the Silhouette score, which can favour degenerate solutions, and anomaly detectors are often compared by how many points they flag, which is set in advance by their contamination parameter.</p>
+          </article>
+
+          <!-- Research Problem -->
+          <article class="tabpanel" id="problem" role="tabpanel" aria-labelledby="tab-problem" tabindex="0" hidden>
+            <h3>Research Problem</h3>
+            <blockquote class="statement">
+              <p>The decision problem is bigger than a single demand prediction. How can 15-minute electricity demand data be turned into intelligence that tells a planner what demand will be, what kind of day it is, why, and what would happen under changed conditions — in one connected system?</p>
+            </blockquote>
+            <div class="table-scroll">
+              <table class="rule-table">
+                <caption>Table 2 — Four parts of the problem</caption>
+                <thead><tr><th scope="col">No.</th><th scope="col">Problem</th><th scope="col">Why it matters</th></tr></thead>
+                <tbody>
+                  <tr><td class="num">01</td><td>Point forecasts hide operating risk</td><td>A single value does not show the plausible best- and worst-case demand range.</td></tr>
+                  <tr><td class="num">02</td><td>Static models can age</td><td>Load relationships shift with weather, calendars, events and changing demand patterns.</td></tr>
+                  <tr><td class="num">03</td><td>Numbers alone lack behavioural context</td><td>Operators still need to know whether a day is normal, peak, low or genuinely abnormal.</td></tr>
+                  <tr><td class="num">04</td><td>Separate tools weaken decision flow</td><td>Forecasting, anomaly review, explanation and planning should connect through one platform.</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="prose">
+              <p>A related difficulty is that clustering and anomaly detection are unsupervised. Without labelled abnormal days it is not obvious how to choose between algorithms or how to show that a choice is justified, and published systems seldom explain their choice.</p>
+            </div>
+          </article>
+
+          <!-- Research Objectives -->
+          <article class="tabpanel" id="objectives" role="tabpanel" aria-labelledby="tab-objectives" tabindex="0" hidden>
+            <h3>Research Objectives</h3>
+            <h4 class="label">Main objective</h4>
+            <p class="objective-main">To design, implement and evaluate a decision-support system that combines behavioural analysis of demand, short-term forecasting with uncertainty, explainable AI and scenario-based decision support for electricity planners in Sri Lanka, delivered as connected services behind one dashboard.</p>
+
+            <h4 class="label">Specific objectives</h4>
+            <ol class="objective-list">
+              <li>
+                <h5>Behaviour intelligence</h5>
+                <p class="question">What type of demand day is this — and is it abnormal?</p>
+                <ul>
+                  <li>Preprocess the 15-minute demand data and build 96-point daily demand profiles.</li>
+                  <li>Apply and compare clustering algorithms to group days with similar profiles, selecting a model with a justified multi-index procedure.</li>
+                  <li>Apply and compare anomaly-detection methods to flag abnormal days, using a procedure that does not depend on the preset anomaly rate.</li>
+                  <li>Generate interpretable behaviour labels — Normal Weekday, Peak Demand, Holiday / Low Demand and Abnormal Demand Day — with risk levels and written reasons.</li>
+                </ul>
+              </li>
+              <li>
+                <h5>Adaptive forecasting and prediction</h5>
+                <p class="question">What will demand be — and how uncertain is it?</p>
+                <ul>
+                  <li>Develop and compare deep-learning models, including CNN, LSTM, Transformer and hybrid architectures.</li>
+                  <li>Produce probabilistic forecasts with Monte Carlo Dropout and report a demand range, not only a point value.</li>
+                  <li>Assess forecast uncertainty through the coverage of the prediction intervals.</li>
+                </ul>
+              </li>
+              <li>
+                <h5>Explainable AI</h5>
+                <p class="question">Which features drove the prediction?</p>
+                <ul>
+                  <li>Add an explainable-AI component using SHAP and LIME that gives global and local explanations of variable importance.</li>
+                  <li>Present feature contributions visually and in text so that planners can understand and trust the output.</li>
+                </ul>
+              </li>
+              <li>
+                <h5>Scenario and decision support</h5>
+                <p class="question">What happens under a changed condition?</p>
+                <ul>
+                  <li>Build a scenario engine that lets planners test what-if situations against a baseline.</li>
+                  <li>Assess the risk of each scenario and provide actionable suggestions through an easy-to-use dashboard.</li>
+                  <li>Test and validate the module for accuracy, responsiveness and usability.</li>
+                </ul>
+              </li>
+            </ol>
+          </article>
+
+          <!-- Methodology -->
+          <article class="tabpanel" id="methodology" role="tabpanel" aria-labelledby="tab-methodology" tabindex="0" hidden>
+            <h3>Methodology</h3>
+            <div class="prose">
+              <p>The project follows Design Science Research, in which an artefact is built and evaluated to solve an identified problem <a class="cite" href="#ref-17">[17]</a>, <a class="cite" href="#ref-18">[18]</a>: identify the problem, define objectives, design and develop, demonstrate, evaluate and communicate. The design–evaluation loop was repeated after each progress review.</p>
+            </div>
+
+            <figure class="arch" aria-labelledby="arch-caption">
+              <div class="arch-flow" role="img" aria-label="System architecture: demand, weather and calendar data feed four AI services — behaviour intelligence, adaptive forecasting, explainable AI and scenario decision support — which are served through FastAPI to a React dashboard used by planners.">
+                <div class="arch-layer" aria-hidden="true">
+                  <p class="arch-tag">Data</p>
+                  <div class="arch-box arch-wide">
+                    <strong>15-minute demand series</strong>
+                    <span>Jan 2020 – May 2025 · with weather, calendar and event features</span>
+                  </div>
+                </div>
+                <div class="arch-link" aria-hidden="true"></div>
+                <div class="arch-layer" aria-hidden="true">
+                  <p class="arch-tag">AI services</p>
+                  <div class="arch-services">
+                    <div class="arch-box"><em>C1</em><strong>Behaviour Intelligence</strong><span>Clusters, anomalies, peak days, day labels</span></div>
+                    <div class="arch-box"><em>C2</em><strong>Adaptive Forecasting</strong><span>Deep-learning forecast with 95% interval</span></div>
+                    <div class="arch-box"><em>C3</em><strong>Explainable AI</strong><span>LIME / SHAP explanations</span></div>
+                    <div class="arch-box"><em>C4</em><strong>Scenario &amp; Decision Support</strong><span>What-if simulation, risk level</span></div>
+                  </div>
+                </div>
+                <div class="arch-link" aria-hidden="true"></div>
+                <div class="arch-layer" aria-hidden="true">
+                  <p class="arch-tag">Service layer</p>
+                  <div class="arch-box arch-wide"><strong>FastAPI services</strong><span>One REST service per component</span></div>
+                </div>
+                <div class="arch-link" aria-hidden="true"></div>
+                <div class="arch-layer" aria-hidden="true">
+                  <p class="arch-tag">Presentation</p>
+                  <div class="arch-box arch-wide arch-accent"><strong>React dashboard</strong><span>Behaviour labels · forecast charts · explanations · scenario comparison</span></div>
+                </div>
+              </div>
+              <figcaption id="arch-caption">Fig. 2 — System architecture. Data flows down through four AI services, each exposed by FastAPI, to one dashboard for energy planners and analysts.</figcaption>
+            </figure>
+
+            <div class="table-scroll">
+              <table class="rule-table">
+                <caption>Table 3 — Method by component</caption>
+                <thead><tr><th scope="col">Component</th><th scope="col">Pipeline</th><th scope="col">Evaluation</th></tr></thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Behaviour Intelligence</th>
+                    <td>Clean the series and pivot it into 1,977 daily profiles of 96 slots; cluster profile shapes (K-Means, Ward, Gaussian Mixture, DBSCAN); detect abnormal days (Isolation Forest, LOF, One-Class SVM, Z-score); find peak days with percentile rules; combine the outputs into four labels by priority.</td>
+                    <td>Mean rank over Silhouette, Davies–Bouldin and Calinski–Harabasz for clustering; bootstrap Jaccard stability for detectors; temporal hold-out for future-behaviour prediction.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Adaptive Forecasting</th>
+                    <td>20 input features from demand, weather, calendar, events and lagged load; 96-step lookback, one-step horizon, train-only scaling; CNN, LSTM, Transformer and two hybrid models; 100 stochastic Monte Carlo Dropout passes with residual-based calibration.</td>
+                    <td>MAE and model comparison; empirical coverage of the 95% interval.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Explainable AI</th>
+                    <td>LIME and SHAP applied to the forecasting models to rank feature contributions for a single prediction (local) and across the data (global); explanations of abnormal days opened from the behaviour dashboard.</td>
+                    <td>Reliability of explanations and of feature-importance rankings; how well users understand the visualisations.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Scenario &amp; Decision Support</th>
+                    <td>Baseline input (demand, weather, calendar, events); apply a scenario such as a heat wave, cold spell, price shock or economic boom; predict with a Random Forest / stacking-ensemble model; compare with the baseline as a percentage change in demand.</td>
+                    <td>Model comparison; accuracy, responsiveness and usability of the module.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+
+          <!-- Technologies -->
+          <article class="tabpanel" id="technologies" role="tabpanel" aria-labelledby="tab-technologies" tabindex="0" hidden>
+            <h3>Technologies Used</h3>
+            <div class="table-scroll">
+              <table class="rule-table">
+                <caption>Table 4 — Technology stack</caption>
+                <thead><tr><th scope="col">Layer</th><th scope="col">Technology</th><th scope="col">Used for</th></tr></thead>
+                <tbody>
+                  <tr><th scope="row">Language</th><td>Python</td><td>Data analysis, model training and backend services</td></tr>
+                  <tr><th scope="row">Data handling</th><td>pandas, NumPy</td><td>Cleaning, resampling and pivoting the 15-minute readings</td></tr>
+                  <tr><th scope="row">Machine learning</th><td>scikit-learn</td><td>Clustering, anomaly detection, validity indices, Random Forest and ensemble models</td></tr>
+                  <tr><th scope="row">Deep learning</th><td>TensorFlow</td><td>CNN, LSTM, Transformer and hybrid forecasting models</td></tr>
+                  <tr><th scope="row">Explainability</th><td>LIME, SHAP</td><td>Local and global explanations of model output</td></tr>
+                  <tr><th scope="row">Backend</th><td>FastAPI, Uvicorn</td><td>REST services with automatic API documentation</td></tr>
+                  <tr><th scope="row">Frontend</th><td>React, Vite, Recharts</td><td>Component-based dashboard, fast builds, declarative charts</td></tr>
+                  <tr><th scope="row">Version control</th><td>Git, GitHub</td><td>A branch per component in the team repository</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================== 03 MILESTONES -->
+    <section class="section" id="milestones" aria-labelledby="milestones-title" data-nav="Milestones">
+      <div class="wrap">
+        <p class="section-no"><span>03</span> Milestones</p>
+        <h2 class="section-title" id="milestones-title">Project milestones</h2>
+        <div class="milestone-grid">
+          <div class="milestone-picker">
+            <label class="label" for="milestone-select">Choose a milestone</label>
+            <select id="milestone-select"></select>
+            <ol class="milestone-track" id="milestone-track" aria-label="All milestones"></ol>
+          </div>
+          <div class="milestone-detail" id="milestone-detail" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================= 04 DOCUMENTS -->
+    <section class="section" id="documents" aria-labelledby="documents-title" data-nav="Documents">
+      <div class="wrap">
+        <p class="section-no"><span>04</span> Documents</p>
+        <h2 class="section-title" id="documents-title">Project documents</h2>
+        <div class="doc-filters">
+          <div class="chips" id="doc-chips" role="group" aria-label="Filter documents by milestone"></div>
+          <div class="doc-member">
+            <label class="label" for="doc-member">Member</label>
+            <select id="doc-member"></select>
+          </div>
+        </div>
+        <p class="doc-count" id="doc-count" role="status"></p>
+        <div id="doc-groups"></div>
+      </div>
+    </section>
+
+    <!-- =================================================== 05 PRESENTATIONS -->
+    <section class="section" id="presentations" aria-labelledby="presentations-title" data-nav="Presentations">
+      <div class="wrap">
+        <p class="section-no"><span>05</span> Presentations</p>
+        <h2 class="section-title" id="presentations-title">Presentations</h2>
+        <div id="presentation-blocks"></div>
+      </div>
+    </section>
+
+    <!-- ======================================================== 06 ABOUT US -->
+    <section class="section" id="about" aria-labelledby="about-title" data-nav="About Us">
+      <div class="wrap">
+        <p class="section-no"><span>06</span> About Us</p>
+        <h2 class="section-title" id="about-title">The team</h2>
+
+        <h3 class="sub-title">Supervisors</h3>
+        <ul class="supervisor-list" id="supervisor-list"></ul>
+
+        <h3 class="sub-title">Research group</h3>
+        <ul class="member-grid" id="member-grid"></ul>
+      </div>
+    </section>
+
+    <!-- ====================================================== 07 CONTACT US -->
+    <section class="section" id="contact" aria-labelledby="contact-title" data-nav="Contact Us">
+      <div class="wrap">
+        <p class="section-no"><span>07</span> Contact Us</p>
+        <h2 class="section-title" id="contact-title">Get in touch</h2>
+
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h3 class="sub-title">Contact details</h3>
+            <dl class="contact-list" id="contact-list"></dl>
+
+            <h3 class="sub-title">General email template</h3>
+            <div class="template-box">
+              <pre id="email-template" tabindex="0"></pre>
+              <p class="template-actions">
+                <button class="btn btn-small" type="button" id="copy-template">Copy template</button>
+                <span class="copy-status" id="copy-status" role="status"></span>
+              </p>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contact-form" novalidate>
+            <h3 class="sub-title">Send a message</h3>
+            <p class="form-note">This form opens your own email application with the message filled in. Nothing is sent from this website.</p>
+            <div class="field">
+              <label for="cf-name">Name</label>
+              <input id="cf-name" name="name" type="text" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="cf-email">Email</label>
+              <input id="cf-email" name="email" type="email" autocomplete="email" required>
+            </div>
+            <div class="field">
+              <label for="cf-subject">Subject</label>
+              <input id="cf-subject" name="subject" type="text" required>
+            </div>
+            <div class="field">
+              <label for="cf-message">Message</label>
+              <textarea id="cf-message" name="message" rows="6" required></textarea>
+            </div>
+            <p class="form-error" id="form-error" role="alert" hidden></p>
+            <button class="btn btn-primary" type="submit">Open in email app</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================================ FOOTER -->
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <p class="footer-id">R26-IT-010</p>
+        <p>AI-Based Electricity Demand Intelligence System for Sri Lanka</p>
+        <p class="muted">Sri Lanka Institute of Information Technology (SLIIT)<br>Faculty of Computing · B.Sc. (Hons) in Information Technology</p>
+      </div>
+      <nav aria-label="Quick links">
+        <p class="label">Quick links</p>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#domain">Domain</a></li>
+          <li><a href="#milestones">Milestones</a></li>
+          <li><a href="#documents">Documents</a></li>
+          <li><a href="#presentations">Presentations</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="wrap footer-base">
+      <p>© 2026 Project R26-IT-010, SLIIT.</p>
+      <p id="footer-repo"></p>
+    </div>
+  </footer>
+
+  <a class="to-top" id="to-top" href="#top" hidden>
+    <span aria-hidden="true">↑</span> Top
+  </a>
+
+  <dialog class="preview" id="preview" aria-labelledby="preview-title">
+    <div class="preview-bar">
+      <p class="preview-title" id="preview-title"></p>
+      <a class="btn btn-small" id="preview-open" href="#" target="_blank" rel="noopener">Open in new tab</a>
+      <button class="btn btn-small" type="button" id="preview-close">Close</button>
+    </div>
+    <iframe id="preview-frame" title="Document preview"></iframe>
+  </dialog>
+
+  <noscript>
+    <p class="noscript">Milestones, documents, presentations and team details are loaded with JavaScript. Please enable it to see them.</p>
+  </noscript>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
