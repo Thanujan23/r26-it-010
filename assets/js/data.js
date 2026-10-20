@@ -298,11 +298,19 @@ window.SITE = {
     { milestone: "paper", title: "Research Paper", owner: "Group", id: "", type: "Report", status: "Pending" },
 
     /* Final Report & Presentation ------------------------------------- */
-    /* The three individual reports in the folder are named *_DRAFT, so they
-       are shown as "Draft" and do not mark the milestone as completed.
+    /* The group report and the four individual reports are named *_DRAFT, so
+       they are shown as "Draft" and do not mark the milestone as completed.
        When the final version is submitted: replace the file, set
-       status: "Submitted" and update date / size / pages.                  */
-    { milestone: "final", title: "Final Report — Group", owner: "Group", id: "", type: "Report", status: "Pending" },
+       status: "Submitted" and update date / size / pages.
+       The group report is the original .docx (its stored dates, page count and
+       preview image are template leftovers, so the date is the file's saved
+       date and it has no thumbnail).                                       */
+    {
+      milestone: "final", title: "Final Group Report — R26-IT010",
+      owner: "Group", id: "", type: "Report", format: "DOCX",
+      date: "2026-10-20", size: "612 KB", status: "Draft",
+      url: "documents/final/R26-IT010_DRAFT.docx"
+    },
     {
       milestone: "final", title: "Final Report — Behaviour Intelligence",
       owner: "Thanujan T", id: "IT22545176", type: "Report", format: "PDF",
@@ -317,7 +325,13 @@ window.SITE = {
       url: "documents/final/report-IT22069740-janahan-draft.pdf",
       thumb: "assets/img/thumbs/final-report-IT22069740-janahan-draft.webp"
     },
-    { milestone: "final", title: "Final Report — Explainable AI", owner: "Madushani R.P", id: "IT22273062", type: "Report", status: "Pending" },
+    {
+      milestone: "final", title: "Final Report — Explainable AI",
+      owner: "Madushani R.P", id: "IT22273062", type: "Report", format: "PDF",
+      date: "2026-10-11", size: "1.3 MB", pages: 69, status: "Draft",
+      url: "documents/final/IT22273062_DRAFT.pdf",
+      thumb: "assets/img/thumbs/final-report-IT22273062-madushani-draft.webp"
+    },
     {
       milestone: "final", title: "Final Report — Demand Forecasting / Scenario",
       owner: "Dewmini D.M.D.P", id: "IT22630216", type: "Report", format: "PDF",
@@ -390,7 +404,8 @@ window.SITE = {
   ],
 
   /* Slide decks. The originals are .pptx; the site copies are PDF exports
-     so they open in the browser. Dates are the last-saved date of each deck. */
+     so they open in the browser (the final deck is the original .pptx, so
+     it downloads instead). Dates are the last-saved date of each deck.     */
   presentations: [
     {
       milestone: "proposal", title: "Proposal Presentation — Slides",
@@ -412,6 +427,13 @@ window.SITE = {
       date: "2026-09-01", size: "866 KB", pages: 22, status: "Submitted",
       url: "documents/pp2/slides-group-progress-presentation-2.pdf",
       thumb: "assets/img/thumbs/pp2-slides-group-progress-presentation-2.webp"
+    },
+    {
+      milestone: "final", title: "Final Presentation — Slides",
+      owner: "Group", id: "", type: "Slides", format: "PPTX",
+      date: "2026-10-20", size: "5.5 MB", pages: 35, status: "Draft",
+      url: "documents/final/Final_Presentation_IT-P01.pptx",
+      thumb: "assets/img/thumbs/final-slides-group-final-presentation.webp"
     }
   ],
 
